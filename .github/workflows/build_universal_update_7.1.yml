@@ -6,7 +6,7 @@ on:
       dsmodel:
         description: 'Input Full DSM model [DS3622xs+|RS4021xs+|DVA3221|DS918+|DS920+|DS3615xs]'
         required: true
-        default: 'DS3622xs+'
+        default: 'DS3615xs'
       major:
         description: 'Input DSM Major version'
         required: true
