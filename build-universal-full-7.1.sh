@@ -105,8 +105,9 @@ cat ./config/${dsmodel}/${build_para}/config.json
 # 7.1.0 must add this ext
 ./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-load/develop-new/redpill-misc/rpext-index.json  
 # add optional ext
-./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-loader-action/master/driver/e1000e/rpext-index.json
-./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-loader-action/master/driver/igb/rpext-index.json
+./ext-manager.sh add https://raw.githubusercontent.com/neroxps/redpill-loader-action/main/driver/virtio/rpext-index.json
+#./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-loader-action/master/driver/e1000e/rpext-index.json
+#./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-loader-action/master/driver/igb/rpext-index.json
 # DS920+ must add this ext
 if [ $dsmodel = "DS920+" ];
 then
