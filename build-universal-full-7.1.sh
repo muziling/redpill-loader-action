@@ -60,7 +60,7 @@ cd $workpath
 # download redpill
 git clone -b develop --depth=1 https://github.com/dogodefi/redpill-lkm.git
 # git clone -b develop-new --depth=1 https://github.com/ek2rlstk/redpill-load.git
-git clone -b develop-new develop --depth=1 https://github.com/dogodefi/redpill-load.git
+git clone -b develop --depth=1 https://github.com/pocopico/redpill-load.git
 
 
 # download syno toolkit
@@ -78,7 +78,7 @@ cd ..
 
 # download old pat for syno_extract_system_patch # thanks for jumkey's idea.
 mkdir synoesp
-curl --location https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS3622xs%2B_42218.pat --output oldpat.tar.gz
+curl --location https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_${dsmodel}_42218.pat --output oldpat.tar.gz
 tar -C./synoesp/ -xf oldpat.tar.gz rd.gz
 cd synoesp
 
@@ -105,9 +105,9 @@ sed -i '0,/"sha256.*/s//"sha256": "'$os_sha256'"/' ./config/${dsmodel}/${build_p
 cat ./config/${dsmodel}/${build_para}/config.json
 
 # 7.1.0 must add this ext
-./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-load/develop-new/redpill-misc/rpext-index.json  
+./ext-manager.sh add https://github.com/pocopico/redpill-load/blob/develop/redpill-misc/rpext-index.json 
 # add optional ext
-./ext-manager.sh add https://raw.githubusercontent.com/neroxps/redpill-loader-action/main/driver/virtio/rpext-index.json
+./ext-manager.sh add https://raw.githubusercontent.com/vaguecupid/redpill-load/develop/redpill-virtio/rpext-index.json
 #./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-loader-action/master/driver/e1000e/rpext-index.json
 #./ext-manager.sh add https://raw.githubusercontent.com/ek2rlstk/redpill-loader-action/master/driver/igb/rpext-index.json
 # DS920+ must add this ext
