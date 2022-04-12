@@ -3,7 +3,12 @@
     "vid": "0x46f4",
     "pid": "0x0001",
     "sn": "1230LWN014157",
-    "mac1": "FE0BC9ABD33B"
+    "mac1": "FE0BC9ABD33B",
+    "sata_uid": "1",
+    "sata_pcislot": "5",
+    "DiskIdxMap": "1400",
+    "SataPortMap": "14",
+    "SasIdxMap": "0"
   },
   "synoinfo": {
     "supportsystemperature": "no",
