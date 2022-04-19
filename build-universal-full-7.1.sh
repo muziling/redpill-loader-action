@@ -107,7 +107,7 @@ cd ../../../
 cd redpill-load
 cp -f ${root}/user_config.${dsmodel}.json ./user_config.json
 sed -i '0,/"sha256.*/s//"sha256": "'$os_sha256'"/' ./config/${dsmodel}/${build_para}/config.json
-sed -i "s/redpill-linux-v.*.ko/redpill-linux-v${KVERS[0]}.ko/g" ./config/${dsmodel}/${build_para}/config.json
+sed -i "s/redpill-linux-v.*.ko\":/redpill-linux-v${KVERS[0]}.ko\":/g" ./config/${dsmodel}/${build_para}/config.json
 cat ./config/${dsmodel}/${build_para}/config.json
 
 # 7.1.0 must add this ext
