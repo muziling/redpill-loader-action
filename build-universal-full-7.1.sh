@@ -24,9 +24,14 @@ case $1 in
         osid="ds918p"
         echo "arch is Apollolake"
         ;;
-  DS3615xs)
+ DS3615xs)
         arch="bromolow"
         osid="ds3615xs"
+        echo "arch is Bromolow"
+        ;;
+ DS3617xs)
+        arch="bromolow"
+        osid="ds3617xs"
         echo "arch is Bromolow"
         ;;
  DS920+)
