@@ -30,9 +30,9 @@ case $1 in
         echo "arch is Bromolow"
         ;;
  DS3617xs)
-        arch="bromolow"
+        arch="broadwell"
         osid="ds3617xs"
-        echo "arch is Bromolow"
+        echo "arch is Broadwell"
         ;;
  DS920+)
         arch="geminilake"
